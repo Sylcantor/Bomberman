@@ -1,0 +1,24 @@
+{ "columns":8,
+ "image":"..\/spritesheets\/Stage-1.png",
+ "imageheight":112,
+ "imagewidth":128,
+ "margin":0,
+ "name":"Stage-1-1",
+ "spacing":0,
+ "tilecount":56,
+ "tiledversion":"1.8.4",
+ "tileheight":16,
+ "tiles":[
+        {
+         "id":0,
+         "properties":[
+                {
+                 "name":"Test",
+                 "type":"string",
+                 "value":"Bonjour"
+                }]
+        }],
+ "tilewidth":16,
+ "type":"tileset",
+ "version":"1.8"
+}
