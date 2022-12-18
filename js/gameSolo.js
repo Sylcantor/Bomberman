@@ -19,8 +19,6 @@ import { rectanglesIntersect } from "./collisions.js";
 
 
 export var GameSolo = function () {
-    //images
-
     //canvas
     let canvas = null;
     let ctx = null;
