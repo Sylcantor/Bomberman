@@ -3,10 +3,15 @@
         <title>Bomberman</title>
         <link rel="stylesheet" href="css/styles.css">
         <script type="module" src="js/main.js"></script>
+        <script src="js/timeBasedAnim.js"></script>
     </head>
     <body>
-        <h1>Bomberman</h1> 
-        <canvas id="backgroundCanvas" width="480" height="416"></canvas>
-        <canvas id="gameCanvas" width="480" height="416"></canvas>
+        <h1>Bomberman</h1>
+        <h1 id="Stage"></h1>
+        <p> Press space to place a bomb.</p>
+        <p> Press arrow keys to move. </p>
+        <p> Kill all the enemies to pass the level. </p>
+        <p> Reach all stages to win the game. </p>
+        <canvas id="myCanvas" width="960" height="832"></canvas>
     </body>
 </html>

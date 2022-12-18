@@ -1,7 +1,8 @@
 
-import {GF} from './game.js';
+import {GameSolo} from './gameSolo.js';
 
 window.onload = () => {
-    let game = new GF();
+    //listener for the start button
+    let game = new GameSolo();
     game.start();
 }

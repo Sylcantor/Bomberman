@@ -1,7 +1,7 @@
-let delta, oldTime = 0;
+var delta, oldTime = 0;
 
 function timer(currentTime) {
-	delta = currentTime - oldTime;
+	var delta = currentTime - oldTime;
 	oldTime = currentTime;
 	return delta;
 }
@@ -9,6 +9,4 @@ function timer(currentTime) {
 var calcDistanceToMove = function (delta, speed) {
     //console.log("#delta = " + delta + " speed = " + speed);
     return (speed * delta) / 1000;
- };
-
-export {timer,calcDistanceToMove,delta}
+};

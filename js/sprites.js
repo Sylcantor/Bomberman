@@ -23,14 +23,14 @@ export default class Sprite {
         this.currentFrame = 0;
         this.delayBetweenFrames = 10;
 
-        this.extractSprites = function (spritesheet, nbPostures, postureToExtract, nbFramesPerPosture,
+        this.extractSprites = function (spritesheet, nbPostures, postureToExtract, nbFramesOnPosture,
             spriteWidth, spriteHeight) {
             // number of sprites per row in the spritesheet
             var nbSpritesPerRow = Math.floor(spritesheet.width / spriteWidth);
 
             // Extract each sprite
-            var startIndex = (postureToExtract - 1) * nbFramesPerPosture;
-            var endIndex = startIndex + nbFramesPerPosture;
+            var startIndex = (postureToExtract - 1) * nbSpritesPerRow;
+            var endIndex = startIndex + nbFramesOnPosture;
             for (var index = startIndex; index < endIndex; index++) {
                 // Computation of the x and y position that corresponds to the sprite
                 // index
